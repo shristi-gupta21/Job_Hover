@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        footer{
+  position: relative;
+  padding: 50px 100px;
+  background: #111;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 700px;
+}
+.footer body{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+footer .container .sec{
+  margin-right: 30px;
+}
+footer .container .sec.aboutus{
+  width: 40%;
+}
+footer .container  h2{
+  position:relative;
+  color:#fff;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+footer .container  h2:before{
+  content:'';
+  position: absolute;
+  bottom: -5px;
+  left:0;
+  width:50px;
+  height:2px;
+  background: #f00;
+
+}
+footer p{
+  color:#999;
+}
+.sci{
+  margin-top: 20px;
+  display: flex;
+}
+.sci li{
+  list-style: none;
+}
+.sci li a{
+  display:inline-block;
+  width:40px;
+  height: 40px;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+.sci li a:hover{
+  background-color: red;
+}
+.quicklinks{
+  position:relative;
+  width:25%;
+}
+.quicklinks ul li {
+  list-style: none;
+}
+.quicklinks ul li a:hover{
+  color:#fff;
+}
+.quicklinks ul li a{
+  color:#999;
+  text-decoration: none;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.contact{
+  width:calc(35% - 60px);
+  margin-right: 0 !important;
+}
+.contact .info{
+  position: relative;
+}
+.contact .info li{
+  display: flex;
+  margin-bottom: 16px;;
+}
+.contact .info li span:nth-child(1){
+  color:#fff;
+  font-size: 20px;
+  margin-right: 10pxS;
+}
+.contact .info li span{
+  color: #999;
+  padding: 10px;
+}
+.contact .info li  a{
+color: #999;
+text-decoration: none;
+}
+.contact .info li a:hover{
+  color: #fff;
+}
+.copyrighttext{
+  width: 100%;
+  background: #181818;
+  padding: 8px 100px;
+  text-align: center;
+  color:#999;
+}
+    </style>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+</head>
+<body>
+    <footer id="contact"> 
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam distinctio mollitia doloribus quas dolorum id fugit velit similique tempora sunt.</p>
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="fa fa-map-marker"></i></span>
+                            <span>8/238 Freegunj <br>
+                         Belangnj,<br>Agra</span>
+                        </li>
+                        <li>
+                         <span><i class="fa fa-phone"></i></span>
+                         <p><a href="tel:932162612712">5216331121</a><br>
+                             <a href="tel:932162612712">5216331121</a></p>
+                     </li>
+                     <li>
+                         <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="mailto:deepanshimittal6@gmail.com">deepanshimittal6@gmail.com</a><br>
+                         <a href="mailto:shruti.sharma_cs19@gla.ac.in">shruti.sharma_cs19@gla.ac.in</a><br>
+                         <a href="mailto:shristi.gupta_cs19@gla.ac.in">shristi.gupta_cs19@gla.ac.in</a>
+                     </p>
+                        
+                     </li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Cpyright &copy 2020 .All rights are Reserved</p>
+    </div>
+</body>
+</html>

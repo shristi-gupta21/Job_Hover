@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container1{
+    display: flex;
+    /* background: linear-gradient(135deg,#71b7e6,#9b59b6); */
+    background: linear-gradient(to right,#6db9ef,#7ce08a);
+    /* opacity: 0.2; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    border: 2px solid black;
+    padding: 10px;
+    
+
+}
+.signup{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+/* header css */
+.signup header{
+    font-weight: 500;
+    font-size: 2rem;
+    position: relative;
+} 
+.signup header::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    /* border-radius: 2px; */
+    background: linear-gradient(to right,#6db9ef,#7ce08a);
+}
+/* form css */
+.signup form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box label{
+    font-weight: 700;
+    margin-bottom: 5px; 
+    display: block;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%; 
+    outline: none;
+    border-radius: 5px;
+    /* border: none; */
+    /* border-bottom: 1px solid #ccc; */
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1rem;
+    border-bottom-width: 2px;
+    transition: all 0 3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:hover,
+.user-details .input-box input:valid {
+    border-color: #7ce08a;
+}
+
+button {
+
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    font-size: 18px;
+    font-weight:700;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background: linear-gradient(to right,#6db9ef,#7ce08a);
+
+}
+button:hover{
+    background:linear-gradient(to right,#6db9ef,#7ce08a);
+}
+@media (max-width : 580px){
+    .signup{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .signup form .user-details{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+
+    }
+}
